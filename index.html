@@ -1,0 +1,523 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Land Your Dream Job Faster with Resumes Designed to Beat Age Bias!</title>
+    <meta name="description" content="Struggling to get noticed? Our AI-powered resume builder helps you stand out—no matter your age.">
+    
+    <!-- Open Graph tags for social sharing -->
+    <meta property="og:title" content="Land Your Dream Job Faster with Resumes Designed to Beat Age Bias!">
+    <meta property="og:description" content="Struggling to get noticed? Our AI-powered resume builder helps you stand out—no matter your age.">
+    <meta property="og:type" content="website">
+    
+    <style>
+        
+        :root {
+            --primary-color: #1D3557;
+            --cta-color: #F4A261;
+            --bg-color: #F1FAEE;
+            --text-color: #333333;
+            --font-primary: Poppins, sans-serif;
+            --font-secondary: Roboto, sans-serif;
+        }
+        
+        * { margin: 0; padding: 0; box-sizing: border-box; }
+        
+        body { 
+            font-family: var(--font-secondary); 
+            line-height: 1.6; 
+            color: var(--text-color);
+            background-color: var(--bg-color);
+        }
+        
+        .container { 
+            max-width: 1200px; 
+            margin: 0 auto; 
+            padding: 0 20px; 
+        }
+        
+        .hero { 
+            background: linear-gradient(135deg, var(--primary-color) 0%, #1e40af 100%); 
+            color: white; 
+            padding: 120px 20px; 
+            text-align: center; 
+        }
+        
+        .hero h1 { 
+            font-family: var(--font-primary);
+            font-size: clamp(2.5rem, 5vw, 4rem); 
+            margin-bottom: 24px; 
+            font-weight: 700;
+            line-height: 1.2;
+        }
+        
+        .hero p { 
+            font-size: clamp(1.1rem, 2.5vw, 1.4rem); 
+            max-width: 600px; 
+            margin: 0 auto 40px; 
+            opacity: 0.95;
+        }
+        
+        .cta-primary { 
+            background: var(--cta-color); 
+            color: white; 
+            padding: 18px 36px; 
+            border: none; 
+            border-radius: 8px; 
+            font-size: 1.2rem; 
+            font-weight: 600;
+            cursor: pointer; 
+            transition: all 0.3s ease;
+            text-transform: uppercase;
+            letter-spacing: 0.5px;
+        }
+        
+        .cta-primary:hover { 
+            transform: translateY(-2px); 
+            box-shadow: 0 8px 25px rgba(220, 38, 38, 0.3);
+        }
+        
+        .benefits, .social-proof, .features, .cta-final, 
+        .problem-agitation, .solution-reveal, .transformation, 
+        .mechanism, .objections, .urgency { 
+            padding: 80px 20px; 
+        }
+        
+        .benefits { background: #f8fafc; }
+        .solution-reveal { background: #f0f9ff; }
+        .transformation { background: #ecfdf5; }
+        .mechanism { background: #fef7f0; }
+        .objections { background: #f8fafc; }
+        .urgency { background: #fef2f2; }
+        
+        .benefits h2, .social-proof h2, .features h2 { 
+            text-align: center; 
+            margin-bottom: 60px; 
+            font-size: clamp(2rem, 4vw, 3rem);
+            font-family: var(--font-primary);
+            color: var(--text-color);
+        }
+        
+        .benefits-grid { 
+            display: grid; 
+            grid-template-columns: repeat(auto-fit, minmax(320px, 1fr)); 
+            gap: 40px; 
+            margin-top: 40px;
+        }
+        
+        .benefit { 
+            background: white; 
+            padding: 40px 30px; 
+            border-radius: 12px; 
+            text-align: center; 
+            box-shadow: 0 4px 20px rgba(0,0,0,0.08);
+            transition: transform 0.3s ease;
+        }
+        
+        .benefit:hover {
+            transform: translateY(-5px);
+        }
+        
+        .benefit h3 { 
+            margin-bottom: 20px; 
+            color: var(--primary-color); 
+            font-size: 1.5rem;
+            font-weight: 600;
+        }
+        
+        .testimonials { 
+            display: grid; 
+            grid-template-columns: repeat(auto-fit, minmax(300px, 1fr)); 
+            gap: 30px; 
+        }
+        
+        .testimonial { 
+            background: white; 
+            padding: 30px; 
+            border-radius: 12px; 
+            box-shadow: 0 4px 20px rgba(0,0,0,0.08);
+        }
+        
+        .testimonial p { 
+            font-style: italic; 
+            margin-bottom: 20px; 
+            font-size: 1.1rem;
+        }
+        
+        .testimonial cite { 
+            font-weight: 600; 
+            color: var(--primary-color); 
+        }
+        
+        .cta-final { 
+            background: linear-gradient(135deg, #1f2937 0%, #374151 100%); 
+            color: white; 
+            text-align: center; 
+        }
+        
+        .cta-final h2 {
+            color: white;
+            margin-bottom: 20px;
+        }
+        
+        .risk-reversal { 
+            margin-top: 20px; 
+            font-size: 0.9rem; 
+            opacity: 0.9; 
+        }
+        
+        footer { 
+            background: #111827; 
+            color: white; 
+            text-align: center; 
+            padding: 40px 20px; 
+        }
+        
+        /* New Section Styles */
+        .problem-agitation h2, .solution-reveal h2, .transformation h2,
+        .mechanism h2, .objections h2, .urgency h2 {
+            text-align: center; 
+            margin-bottom: 40px; 
+            font-size: clamp(2rem, 4vw, 2.5rem);
+            font-family: var(--font-primary);
+        }
+        
+        .problem-content p, .solution-content p, .transformation-content p,
+        .mechanism-content p, .objections-content p, .urgency-content p {
+            font-size: 1.1rem;
+            line-height: 1.8;
+            margin-bottom: 20px;
+            max-width: 800px;
+            margin-left: auto;
+            margin-right: auto;
+        }
+        
+        .before-after {
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            gap: 40px;
+            margin: 40px 0;
+            max-width: 800px;
+            margin-left: auto;
+            margin-right: auto;
+        }
+        
+        .before, .after {
+            background: white;
+            padding: 30px;
+            border-radius: 12px;
+            box-shadow: 0 4px 20px rgba(0,0,0,0.08);
+        }
+        
+        .before h3 {
+            color: #dc2626;
+            margin-bottom: 20px;
+        }
+        
+        .after h3 {
+            color: #059669;
+            margin-bottom: 20px;
+        }
+        
+        .process-steps {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+            gap: 30px;
+            margin: 40px 0;
+        }
+        
+        .step {
+            text-align: center;
+            background: white;
+            padding: 30px 20px;
+            border-radius: 12px;
+            box-shadow: 0 4px 20px rgba(0,0,0,0.08);
+        }
+        
+        .step-number {
+            width: 60px;
+            height: 60px;
+            background: var(--primary-color);
+            color: white;
+            border-radius: 50%;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            font-size: 1.5rem;
+            font-weight: bold;
+            margin: 0 auto 20px;
+        }
+        
+        .objections-list {
+            max-width: 800px;
+            margin: 40px auto 0;
+        }
+        
+        .objection-item {
+            background: white;
+            padding: 30px;
+            margin-bottom: 20px;
+            border-radius: 12px;
+            box-shadow: 0 4px 20px rgba(0,0,0,0.08);
+        }
+        
+        .objection-item h3 {
+            color: var(--primary-color);
+            margin-bottom: 15px;
+            font-size: 1.2rem;
+        }
+        
+        .urgency-reasons {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+            gap: 30px;
+            margin: 40px 0;
+        }
+        
+        .reason {
+            background: white;
+            padding: 30px;
+            border-radius: 12px;
+            text-align: center;
+            box-shadow: 0 4px 20px rgba(0,0,0,0.08);
+            border-left: 4px solid var(--cta-color);
+        }
+        
+        .reason h3 {
+            color: var(--cta-color);
+            margin-bottom: 15px;
+            font-size: 1.3rem;
+        }
+
+        /* Mobile optimizations */
+        @media (max-width: 768px) {
+            .hero { padding: 80px 20px; }
+            .benefits, .social-proof, .features, .cta-final,
+            .problem-agitation, .solution-reveal, .transformation, 
+            .mechanism, .objections, .urgency { padding: 60px 20px; }
+            .cta-primary { padding: 16px 28px; font-size: 1.1rem; }
+            .before-after { grid-template-columns: 1fr; gap: 20px; }
+            .process-steps { grid-template-columns: 1fr; gap: 20px; }
+            .urgency-reasons { grid-template-columns: 1fr; gap: 20px; }
+        }
+    
+    </style>
+</head>
+<body>
+    
+    <section class="hero">
+        <div class="container">
+            <h1>Land Your Dream Job Faster with Resumes Designed to Beat Age Bias!</h1>
+            <p>Struggling to get noticed? Our AI-powered resume builder helps you stand out—no matter your age.</p>
+            <button class="cta-primary">Start Your Free Resume Makeover Today!</button>
+        </div>
+    </section>
+    
+    <section class="problem-agitation">
+        <div class="container">
+            <h2>The Hidden Cost of Manual Processes</h2>
+            <div class="problem-content">
+                <p>Meet Susan, a 50-year-old marketing professional with decades of experience. Despite her impressive resume, she wasn’t getting callbacks. Every rejection felt like a blow to her confidence. She started to believe her age was the problem—not her skills. She felt stuck, frustrated, and unsure of what to do.</p>
+            </div>
+        </div>
+    </section>
+    
+    <section class="solution-reveal">
+        <div class="container">
+            <h2>Finally, A Better Way Forward</h2>
+            <div class="solution-content">
+                <p>Our Age-Proof AI Resume Builder is here to change that. Using cutting-edge technology, we make sure your experience shines, your skills match exactly what hiring managers are looking for, and your resume is impossible to ignore. It’s time to move past the barriers and step into your next role with confidence.</p>
+            </div>
+        </div>
+    </section>
+    
+    <section class="benefits">
+        <div class="container">
+            <h2>Why Choose Us</h2>
+            <div class="benefits-grid">
+                
+        <div class="benefit">
+            <h3>Age-Neutral Resume Optimization</h3>
+            <p>Our AI ensures your resume avoids age-biased language, so you’re judged on your skills, not your years.</p>
+        </div>
+    
+        <div class="benefit">
+            <h3>Tailored to Your Dream Job</h3>
+            <p>We analyze job descriptions to match your skills with the exact keywords hiring managers look for.</p>
+        </div>
+    
+        <div class="benefit">
+            <h3>Modern, Professional Design</h3>
+            <p>Stand out with visually stunning resumes that convey confidence and professionalism.</p>
+        </div>
+    
+        <div class="benefit">
+            <h3>Unlimited Updates and Edits</h3>
+            <p>Stay updated and on top of your job search with flexible, subscription-based access to our platform.</p>
+        </div>
+    
+            </div>
+        </div>
+    </section>
+    
+    <section class="transformation">
+        <div class="container">
+            <h2>The Transformation You've Been Waiting For</h2>
+            <div class="transformation-content">
+                <p>Then Susan found our platform. Within minutes, the AI identified opportunities to optimize her resume—adjusting keywords, reformatting her design, and removing age-biased language. The difference was immediate. In just two weeks, she received multiple interview requests, ultimately landing a role that valued her expertise.</p>
+                
+                <div class="before-after">
+                    <div class="before">
+                        <h3>Before</h3>
+                        <ul>
+                            <li>Manual, time-consuming processes</li>
+                            <li>High error rates and inefficiency</li>
+                            <li>Frustrated teams and customers</li>
+                            <li>Limited scalability</li>
+                        </ul>
+                    </div>
+                    <div class="after">
+                        <h3>After</h3>
+                        <ul>
+                            <li>Automated, lightning-fast operations</li>
+                            <li>99%+ accuracy and reliability</li>
+                            <li>Delighted teams and customers</li>
+                            <li>Unlimited growth potential</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    
+    <section class="social-proof">
+        <div class="container">
+            <h2>What Our Customers Say</h2>
+            <div class="testimonials">
+                
+        <div class="testimonial">
+            <p>"I was struggling with rejection after rejection—until I used this platform. I landed 3 interviews within two weeks!"</p>
+            <cite>Jane Doe, Marketing Manager</cite>
+        </div>
+    
+        <div class="testimonial">
+            <p>"The AI completely revamped my resume, and the difference was night and day. I finally got noticed!"</p>
+            <cite>John Smith, Senior Engineer</cite>
+        </div>
+    
+            </div>
+        </div>
+    </section>
+    
+    <section class="mechanism">
+        <div class="container">
+            <h2>How It Works: The Science Behind The Success</h2>
+            <div class="mechanism-content">
+                <p>Our platform uses advanced AI algorithms to evaluate your resume against job descriptions and industry standards. It identifies the exact keywords hiring managers are searching for and integrates them seamlessly. The AI also ensures age-neutral language, helping you avoid unconscious bias. Finally, our customizable templates turn your resume into a visually compelling document that’s easy to read and impossible to ignore.</p>
+                
+                <div class="process-steps">
+                    <div class="step">
+                        <div class="step-number">1</div>
+                        <h3>Intelligent Analysis</h3>
+                        <p>Our AI instantly analyzes and understands your unique situation</p>
+                    </div>
+                    <div class="step">
+                        <div class="step-number">2</div>
+                        <h3>Smart Automation</h3>
+                        <p>Advanced algorithms handle the heavy lifting automatically</p>
+                    </div>
+                    <div class="step">
+                        <div class="step-number">3</div>
+                        <h3>Seamless Integration</h3>
+                        <p>Everything works together perfectly with your existing systems</p>
+                    </div>
+                    <div class="step">
+                        <div class="step-number">4</div>
+                        <h3>Continuous Improvement</h3>
+                        <p>The system learns and gets better over time</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    
+    <section class="objections">
+        <div class="container">
+            <h2>Common Questions Answered</h2>
+            <div class="objections-content">
+                <p>Concerned that AI can’t replace human expertise? Think of it as a tool—not a replacement. Our technology amplifies your strengths and ensures your resume is aligned with what hiring managers want. Worried about security? We’ve got you covered with top-tier encryption and privacy protocols. Think it won’t work for your industry? Our platform is tailored to over 50 fields, from tech to healthcare. And if you’re still unsure, our 30-day money-back guarantee removes all risk.</p>
+                
+                <div class="objections-list">
+                    
+        <div class="objection-item">
+            <h3>❓ "I don’t trust AI to understand my unique career path."</h3>
+            <p>✅ Our technology is designed to analyze your specific skills, experience, and industry to create a personalized resume that highlights your strengths.</p>
+        </div>
+    
+        <div class="objection-item">
+            <h3>❓ "What if the AI doesn’t work for my field?"</h3>
+            <p>✅ Our platform is fine-tuned for over 50 industries, ensuring tailored optimization no matter your field.</p>
+        </div>
+    
+        <div class="objection-item">
+            <h3>❓ "I’m worried about the security of my personal information."</h3>
+            <p>✅ We use advanced encryption and data protection protocols to ensure your information is always secure.</p>
+        </div>
+    
+                </div>
+            </div>
+        </div>
+    </section>
+    
+    <section class="urgency">
+        <div class="container">
+            <h2>⏰ Why You Must Act Now</h2>
+            <div class="urgency-content">
+                <p>Right now, employers are hiring for roles that could be perfect for you—but they won’t wait forever. Every day you delay is another missed opportunity to get in front of decision-makers. Sign up today and take advantage of our limited-time offer to get a free month of access.</p>
+                
+                <div class="urgency-reasons">
+                    <div class="reason">
+                        <h3>🔥 Limited Time Pricing</h3>
+                        <p>This special offer won't last forever - secure your spot today</p>
+                    </div>
+                    <div class="reason">
+                        <h3>📈 Competitive Advantage</h3>
+                        <p>Every day you wait is another day your competitors gain ground</p>
+                    </div>
+                    <div class="reason">
+                        <h3>💰 Cost of Inaction</h3>
+                        <p>The cost of doing nothing far exceeds the investment in this solution</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    
+    <section class="cta-final">
+        <div class="container">
+            <h2>Ready to Get Started?</h2>
+            <p>Time is of the essence. The job market moves fast, and every day without a standout resume is a missed opportunity. Don’t let age bias hold you back any longer. With our Age-Proof AI Resume Builder, you can take control of your career trajectory today.</p>
+            <button class="cta-primary">Start Your Free Resume Makeover Today!</button>
+            <p class="risk-reversal">Try it risk-free with our 30-day money-back guarantee.</p>
+        </div>
+    </section>
+    
+    <footer>
+        <div class="container">
+            <p>&copy; 2025 Land Your Dream Job Faster with Resumes Designed to Beat Age Bias!. Generated by Enhanced Idea2MVP.</p>
+        </div>
+    </footer>
+    
+    <!-- Analytics and tracking -->
+    <script>
+        // Conversion tracking events
+        document.querySelectorAll('.cta-primary').forEach(button => {
+            button.addEventListener('click', function() {
+                console.log('CTA clicked:', this.textContent);
+                // Add your analytics tracking here
+            });
+        });
+    </script>
+</body>
+</html>
